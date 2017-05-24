@@ -56,5 +56,35 @@ data:extend({
     subgroup = "ammo",
     order = "d[rocket-launcher]-a[basic]",
     stack_size = 200
+  },
+  ----- Acid Rocket -----
+  {
+   type = "ammo",
+   name = "acid-rocket",
+   icon = "__rocket_turret__/graphics/icons/acid-rocket.png",
+   flags = {"goes-to-main-inventory"},
+   ammo_type =
+   {
+     category = "rocket",
+     action =
+     {
+       type = "direct",
+       action_delivery =
+       {
+         type = "projectile",
+         projectile = "acid-rocket",
+         starting_speed = 0.1,
+         source_effects =
+         {
+           type = "create-entity",
+           entity_name = "explosion-hit"
+         }
+       }
+     }
+    },
+   subgroup = "ammo",
+   order = "d[rocket-launcher]-a[basic]",
+   stack_size = 200
   }
+  
  })
