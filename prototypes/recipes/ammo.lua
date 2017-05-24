@@ -29,6 +29,7 @@ data:extend({
   {
     type = "recipe",
     name = "acid-rocket",
+    category = "crafting-with-fluid",
     enabled = true,
     energy_required = 10,
     ingredients =
