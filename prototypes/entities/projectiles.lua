@@ -201,7 +201,7 @@ data:extend({
                   },
                   {
                     type = "create-entity",
-                    entity_name = "explosion"
+                    entity_name = "acid-splash-purple"
                   }
                 }
               }
