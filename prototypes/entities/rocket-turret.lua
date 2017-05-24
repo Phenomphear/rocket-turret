@@ -344,7 +344,7 @@ data:extend({
     automated_ammo_count = 10,
     attacking_speed = 0.5,
 	turret_base_has_direction = true,
-    folded_animation = 
+    folded_animation =
     {
       layers =
       {
@@ -353,7 +353,7 @@ data:extend({
 		--- mask to be added later ---
       }
     },
-    preparing_animation = 
+    preparing_animation =
     {
       layers =
       {
@@ -364,10 +364,10 @@ data:extend({
     },
     prepared_animation = basic_rocket_turret_attack{frame_count=1},
     attacking_animation = basic_rocket_turret_attack{},
-    folding_animation = 
-    { 
-      layers = 
-      { 
+    folding_animation =
+    {
+      layers =
+      {
         basic_rocket_turret_extension{run_mode = "backward"},
         basic_rocket_turret_extension_shadow{run_mode = "backward"}
 		--- mask to be added later ---
@@ -388,21 +388,21 @@ data:extend({
           shift = {0, -0.046875},
         },
         {
-          filename = "__base__/graphics/entity/laser-turret/laser-turret-base-mask.png", --- Ugly but works for now
+          filename = "__rocket_turret__/graphics/entity/rocket-turret/basic-rocket-turret-base-mask.png",
           flags = { "mask" },
           line_length = 1,
-          width = 52,
-          height = 47,
+          width = 90,
+          height = 75,
           axially_symmetrical = false,
           direction_count = 1,
           frame_count = 1,
-          shift = {0, -0.234375},
+          -- shift = {0, -0.234375}, looks better?
           apply_runtime_tint = true
         }
       }
     },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    
+
     attack_parameters =
     {
       type = "projectile",
@@ -413,7 +413,7 @@ data:extend({
       range = 20,
 	  min_range = 5,
 	  turn_range = .35,
-      sound = 
+      sound =
 		{
 			{
 				filename = "__base__/sound/fight/rocket-launcher.ogg",
@@ -424,7 +424,7 @@ data:extend({
 
     call_for_help_radius = 40
    },
-	
+
 	----------- Advanced Rocket Turret -----------
   {
     type = "ammo-turret",
@@ -462,7 +462,7 @@ data:extend({
     automated_ammo_count = 10,
     attacking_speed = 0.5,
 	turret_base_has_direction = true,
-    folded_animation = 
+    folded_animation =
     {
       layers =
       {
@@ -471,7 +471,7 @@ data:extend({
 		--- mask to be added later ---
       }
     },
-    preparing_animation = 
+    preparing_animation =
     {
       layers =
       {
@@ -482,10 +482,10 @@ data:extend({
     },
     prepared_animation = advanced_rocket_turret_attack{frame_count=1},
     attacking_animation = advanced_rocket_turret_attack{},
-    folding_animation = 
-    { 
-      layers = 
-      { 
+    folding_animation =
+    {
+      layers =
+      {
         advanced_rocket_turret_extension{run_mode = "backward"},
         advanced_rocket_turret_extension_shadow{run_mode = "backward"}
 		--- mask to be added later ---
@@ -520,7 +520,7 @@ data:extend({
       }
     },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    
+
     attack_parameters =
     {
       type = "projectile",
@@ -531,7 +531,7 @@ data:extend({
       range = 28,
 	  min_range = 8,
 	  turn_range = .45,
-      sound = 
+      sound =
 		{
 			{
 				filename = "__base__/sound/fight/rocket-launcher.ogg",
@@ -579,7 +579,7 @@ data:extend({
     automated_ammo_count = 10,
     attacking_speed = 0.1,
 	turret_base_has_direction = true,
-    folded_animation = 
+    folded_animation =
     {
       layers =
       {
@@ -588,7 +588,7 @@ data:extend({
         rocket_turret_extension_shadow{frame_count=1, line_length = 1}
       }
     },
-    preparing_animation = 
+    preparing_animation =
     {
       layers =
       {
@@ -599,10 +599,10 @@ data:extend({
     },
     prepared_animation = nuclear_turret_attack{frame_count=1},
     attacking_animation = nuclear_turret_attack{},
-    folding_animation = 
-    { 
-      layers = 
-      { 
+    folding_animation =
+    {
+      layers =
+      {
         nuclear_turret_extension{run_mode = "backward"},
         rocket_turret_extension_mask{run_mode = "backward"},
         rocket_turret_extension_shadow{run_mode = "backward"}
@@ -637,7 +637,7 @@ data:extend({
       }
     },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    
+
     attack_parameters =
     {
       type = "projectile",
@@ -659,7 +659,7 @@ data:extend({
       range = 55, --- Anything above 55 will result in a bug
 	  min_range = 43,
 	  damage_modifier = 3,
-      sound = 
+      sound =
 		{
 			{
 				filename = "__base__/sound/fight/rocket-launcher.ogg",
@@ -669,6 +669,6 @@ data:extend({
     },
 
     call_for_help_radius = 40
-	
-	
+
+
 }})

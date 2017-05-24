@@ -12,10 +12,10 @@ data:extend(
 				type = "unlock-recipe",
 				recipe = "crude-rocket"
 			},
-			{
-                type = "unlock-recipe",
-                recipe = "basic-rocket-turret"
-            },
+			  {
+         type = "unlock-recipe",
+         recipe = "basic-rocket-turret"
+        },
 		},
 			prerequisites =
 		{
@@ -91,7 +91,7 @@ data:extend(
 		},
 		order = "a-j-a"
 	},
-
+   ----- Acid Rockets -----
 	{
 		type = "technology",
 		name = "acid-rockets",
