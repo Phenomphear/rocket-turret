@@ -1,6 +1,6 @@
 ----- Basic Rocket Turret Inputs -----
 
-function basic_rocket_turret_extension(inputs)
+local function basic_rocket_turret_extension(inputs)
 return
 {
   filename = "__rocket_turret__/graphics/entity/rocket-turret/basic-rocket-turret-gun-extension.png",
@@ -16,7 +16,7 @@ return
 }
 end
 
-function basic_rocket_turret_extension_mask(inputs) ----- Ugly
+local function basic_rocket_turret_extension_mask(inputs) ----- Ugly
 return
 {
   filename = "__base__/graphics/entity/gun-turret/gun-turret-gun-extension-mask.png",
@@ -33,7 +33,7 @@ return
 }
 end
 
-function basic_rocket_turret_extension_shadow(inputs)
+local function basic_rocket_turret_extension_shadow(inputs)
 return
 {
   filename = "__rocket_turret__/graphics/entity/rocket-turret/basic-rocket-turret-gun-extension-shadow.png",
@@ -49,7 +49,7 @@ return
 }
 end
 
-function basic_rocket_turret_attack(inputs)
+local function basic_rocket_turret_attack(inputs)
 return
 {
   layers =
@@ -103,7 +103,7 @@ end
 
 ----- Advanced Rocket Turret Inputs -----
 
-function advanced_rocket_turret_extension(inputs)
+local function advanced_rocket_turret_extension(inputs)
 return
 {
   filename = "__rocket_turret__/graphics/entity/rocket-turret/advanced-rocket-turret-gun-extension.png",
@@ -121,7 +121,7 @@ end
 ---- need mask for advanced rocket turret
 
 
-function advanced_rocket_turret_extension_shadow(inputs)
+local function advanced_rocket_turret_extension_shadow(inputs)
 return
 {
   filename = "__rocket_turret__/graphics/entity/rocket-turret/advanced-rocket-turret-gun-extension-shadow.png",
@@ -137,7 +137,7 @@ return
 }
 end
 
-function advanced_rocket_turret_attack(inputs)
+local function advanced_rocket_turret_attack(inputs)
 return
 {
   layers =
@@ -191,7 +191,7 @@ end
 
 ----- Nuclear Rocket Turret Inputs -----
 
-function nuclear_turret_extension(inputs)
+local function nuclear_turret_extension(inputs)
 return
 {
   filename = "__rocket_turret__/graphics/entity/rocket-turret/nuclear-turret-gun-extension.png",
@@ -207,7 +207,7 @@ return
 }
 end
 ---- Way messed up code that works ---
-function rocket_turret_extension_mask(inputs) --- Fix This!
+local function rocket_turret_extension_mask(inputs) --- Fix This!
 return
 {
   filename = "__base__/graphics/entity/gun-turret/gun-turret-gun-extension-mask.png",
@@ -224,7 +224,7 @@ return
 }
 end
 
-function rocket_turret_extension_shadow(inputs) --- Fix this!
+local function rocket_turret_extension_shadow(inputs) --- Fix this!
 return
 {
   filename = "__base__/graphics/entity/gun-turret/gun-turret-gun-extension-shadow.png",
@@ -240,7 +240,7 @@ return
 }
 end
 ---- end messed up code ---
-function nuclear_turret_attack(inputs)
+local function nuclear_turret_attack(inputs)
 return
 {
   layers =
