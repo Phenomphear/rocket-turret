@@ -91,7 +91,37 @@ data:extend(
 		},
 		order = "a-j-a"
 	},
-	
+
+	{
+		type = "technology",
+		name = "acid-rockets",
+		icon = "__rocket_turret__/graphics/technology/acid-rockets-tech.png",
+		icon_size = 128,
+		effects =
+		{
+			{
+				type = "unlock-recipe",
+				recipe = "acid-rocket"
+			},
+		},
+			prerequisites =
+		{
+			"hybrid-rockets",
+		},
+		unit =
+		{
+			count = 75,
+			ingredients =
+			{
+				{"science-pack-1", 1},
+				{"science-pack-2", 1},
+				{"military-science-pack", 1}
+			},
+			time = 15
+		},
+		order = "a-j-a"
+	},
+
 	----- Advanced Rocket Turret -----
 	{
 		type = "technology",
@@ -112,7 +142,7 @@ data:extend(
 			"electronics",
 			"advanced-electronics",
 			"crude-rockets",
-			"rocketry"			
+			"rocketry"
 		},
 		unit =
 		{
@@ -162,4 +192,4 @@ data:extend(
 		},
 		order = "e-a-e"
 	}
-  }) 
+  })
