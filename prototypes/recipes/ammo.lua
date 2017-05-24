@@ -33,7 +33,7 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {"rocket", 1}
+      {"rocket", 1},
       {type = "fluid", name = "sulfuric-acid", amount = 5}
     },
     result = "acid-rocket"
