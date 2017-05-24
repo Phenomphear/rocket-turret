@@ -44,7 +44,7 @@
               target_effects =
               {
                 type = "damage",
-                damage = { amount = 15, type = "poison"}
+                damage = { amount = 25, type = "poison"}
               }
             }
           }
