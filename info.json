@@ -5,7 +5,7 @@
   "title": "Rocket Turret",
   "author": "LethargicChii",
   "contact": "",
-  "homepage": "https://forums.factorio.com/viewtopic.php?f=25&t=47350",
+  "homepage": "https://forums.factorio.com/viewtopic.php?f=93&t=47497",
   "description": "Adds a new turret type that uses rocket ammo as well as different types of rockets. Turrets have a range limiter and increased explosive resistances to help with rocket mechanics. Work very well in tight groups.",
   "dependencies": [
 	"base >= 0.15.10"
